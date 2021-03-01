@@ -115,6 +115,7 @@ def game():
                 y = int(input()) - 1
                 if board[x][y] != '  ':
                     print('You cannot place there! That space is occupied!!')
+                    turn -= 1
                     continue
                 board[x][y] = p_1
             else:
@@ -123,6 +124,7 @@ def game():
                 y = int(input()) - 1
                 if board[x][y] != '  ':
                     print('You cannot place there! That space is occupied!!')
+                    turn -= 1
                     continue
                 board[x][y] = p_2
             print_board(board)
